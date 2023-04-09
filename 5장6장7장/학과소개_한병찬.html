@@ -1,37 +1,94 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>컴퓨터공학부 - 한병찬</title>
 
         <style>
-            /* 전체 컨텐츠를 감싸는 div */
+            body {
+                /*background-color: skyblue;*/
+                background-image: url(imeges/workplace-2303851_1920.jpg); /*기본적으로 바둑판 방식으로 반복 263p */
+                background-repeat: no-repeat; /* 배경이미지 반복 금지 */
+                background-attachment: fixed; /* 배경이미지 고정 / 기본값은 스크롤 */
+                background-position: center; 
+                background-size: cover; /* contain; */ /* cover 전체로 / contain 화면좀 작게 */
+                /* main의 백그라운드 컬러 불투명도를 조절한다 */
+            }
+
+            /* 전체 콘텐츠를 감싸는 div */
             #container {
-                background-color: green;
-                width: 1000px; /* 너비 지정 */
-                margin: 0 auto; /* 가로로 중앙에 배치 */
+                /*background-color: chartreuse;*/
+                width: 1000px; /* 너비지정 */
+                margin: 0 auto; /* 가로로 중앙에 배치 (마진 : 바깥쪽 여백을 의미) */
                 padding: 10px; /* 테두리와 내용 사이의 안쪽 여백 */
             }
-
             /* 학과 소개 메인 div */
-            #main {
-                width: 1000px;
-                border: 1px solid #ccc; /* 테두리 지정 */
+            #main { 
+                width: 1000px;    /* #ccc rgb 컬러 16진수 */
+                border: 1px solid #8712e0; /* 테두리 지정 / 이미지는 에인영역 바깥이므로 포함 안된다 (보더 : 선의굵기 / 솔리드 : 선의 종류 / 선의색상 )*/
+                background-color: rgba(0, 255, 255, 0.463);
             }
 
-            img { /* 이미지 사이즈 */
+            img { /* 이미지는 태그라서 #을 안붙인다 #은 아이디 이름이라는 뜻이다 */
                 width: 1000px;
             }
 
             h1 {
                 color: white;
                 background-color: black;
-                font-family: "맑은 고딕";
+                font-family: "맑은 고딕"; /* 글꼴 지정, 주로 고딕체를 쓴다 / 띄어쓰기 필수 */
                 padding: 20px;
-                margin: 0px;
+                margin: 0;
             }
+
+            h2 {
+                color:blue;
+                font-size: 1.8em; /* 글자크기 지정 // 220p / em: 1em = 16px ,ex , px:픽셀(모니터 해상도), pt: 일반적인 문서(한글) */
+                text-align: center; /* 글자 위치 정렬 */
+            }
+
+            p {
+                font-size: 1.1em;
+                font-weight: bold; /* 글자 굵기 */
+                line-height: 1.6em; /* 줄 간격 (한글 줄간격 160%)*/
+                text-align: center;
+            }
+
+            ul {
+                font-size: 1.2em;
+                line-height: 1.6em;
+                font-weight: bold;
+                list-style-type: none; /* 순서 없는 목록 스타일 없음 */
+                color: orange;
+            }
+
+            ol {
+                font-size: 0.9em;
+                font-weight: normal; /* bold체로 지정된 글자 굵기를 normal로 변경한다 */
+                color: rgb(0, 0, 0); /* orenge로 지정된 color을 grat로 변경한다 */
+                font-weight: bolder;
+            }
+
+            /* class 이름이 info인곳에 디자인 적용 . 을 찍는다 */
+            .info {
+                text-align: justify; /* justify 양쪽정렬 */
+                padding: 20px;
+                background-color: rgba(19, 160, 87, 0.275); /* 색깔을 눌러 투명도 조절 낮음 (아래) 높음 (위) */
+            }
+
+            /* span */
+            .red_point {
+                color: red;
+            } 
+
+            /* 주소 */
+            .mini_text {
+                font-size: 0.8em;
+                padding: 20px;
+            }
+
         </style>
     </head>
     <body>
@@ -45,7 +102,7 @@
                 <h1>컴퓨터공학부</h1>
 
                 <h2>학과 소개</h2>
-                <p>
+                <p class="info">
                     본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
                     2023년 현재까지 34년 동안 2천여 명의 졸업생을 배출하였습니다.<br> 
                     졸업생들은 우리나라 최고의 IT기업에서부터 소프트웨어 전문개발업체, 기업체, 금융기업, 공공기관 
@@ -59,7 +116,7 @@
                 <h2>컴퓨터공학 전공</h2>
                 <p>
                     컴퓨터공학의 전반적인 교과목을 학습하여 다양한 IT분야로 진출할 수 있는 기본 역량을 배양하고, <br>
-                    사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능 등 고급 IT기술에 대한 심화 학습을 통해 <br>
+                    <span class="red_point">사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능</span> 등 고급 IT기술에 대한 심화 학습을 통해 <br>
                     취업 역량을 강화하여 현장 밀착형 IT 전문가를 양성하는 전공<br>
                 </p>
                 <hr>
@@ -67,7 +124,7 @@
                 <h2>메타버스 전공</h2>
                 <p>
                     프로그램 코딩 주제의 기초 교육과정과 메타버스 콘텐츠 제작 주제의 심화 교육과정을 통해<br>
-                    메타버스 및 게임 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을<br>
+                    <span class="red_point">메타버스</span> 및 <span class="red_point">게임</span> 등 관련 분야에서 필요로 하는 부호와 영문자를 제작할<br>
                     겸비한 창의적인 인력을 양성하는 전공<br>
                 </p>
                 <hr>
@@ -88,7 +145,7 @@
                 <hr>
 
                 <!-- 주소 구역 -->
-                <p>
+                <p class="mini_text">
                     (우) 46958 부산광역시 사상구 괘법동 신라대학교 국제교육관 440-1호<br>
                     TEL : 051-999-5653,5497 FAX : 051-999-5160	
                 </p>
