@@ -1,0 +1,77 @@
+*/*문서 전체*/ {
+    font-family: "맑은 고딕";
+    margin: 5px;
+}
+
+header, footer {
+    padding: 20px;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+nav {
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    display: inline-block; /*지정하고 싶은 크기가 있으면 인라인 블록(가로 세로 다 됨)*/
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover, a:active {
+    color: white;
+    background-color: coral;
+    text-decoration: underline; 
+}
+
+section {
+    background-color: wheat;
+    border: 3px solid orange;
+    width: 48%;
+    height: 200px;
+    float: left;
+}
+
+footer {
+    /*float 속성 지우기*/
+    clear: both;
+}
+
+.c1 {
+    color: white;
+}
+
+#s1 > h1 {
+    background-color: red;
+}
+
+#s2 > h1 {
+    background-color: orange;
+}
+
+#s3 > h1 {
+    background-color: yellow;
+}
+
+#s4 > h1 {
+    background-color: green;
+}
+
+#s5 > h1 {
+    background-color: blue;
+}
+
+#s6 > h1 {
+    background-color: purple;
+}
