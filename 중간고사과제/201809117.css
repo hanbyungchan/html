@@ -1,3 +1,43 @@
-body {
-    background-color: bisque;
+header {
+    height: 225px;
+}
+
+header img {
+    float:left;
+    width: 600px;
+}
+
+header h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: bold;
+    color:gray;
+    text-align: center;
+}
+
+nav {
+    height: 60px;
+    background-color: rgb(36, 36, 36);
+    color:white;
+}
+
+nav a {
+    color:white;
+    font-weight: bold;
+    text-decoration-line: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(60, 60, 60);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
 }
