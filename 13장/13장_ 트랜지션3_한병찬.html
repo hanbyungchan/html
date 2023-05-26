@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transition3</title>
+
+        <style>
+        h1 {
+            text-align: center;
+        }
+
+        .tr1 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: brown;
+            border: 1px solid black;
+            transition-property: background-color, transform, width, height;
+            transition-duration: 2s;
+        }
+
+        .tr1:hover {
+            width: 200px;
+            height: 150px;
+            background-color: darkblue;
+            transform:rotate(180deg);
+        }
+        </style>
+    </head>
+    <body>
+        <div class="tr1">
+            <h1>한병찬</h1>
+        </div>
+    </body>
+</html>
